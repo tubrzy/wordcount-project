@@ -1,0 +1,26 @@
+<h1>About the Developer </h1>
+
+
+
+<br />
+</form>
+
+<a href="{% url 'home' %}">Return Home</a>
+
+
+
+
+<h1>Site by Cody Dixon<h1/>
+{{ fulltext }}
+
+<h1>Click Start Again to Return Home</h1>
+
+{% for word, counttotal in sortedwords %}
+
+{{ word }} - {{ counttotal }}
+<br />
+
+<a href="{% url 'home' %}">Start Again</a>
+
+
+  {% endfor %}
